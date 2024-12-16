@@ -10,7 +10,7 @@ export default function SideBar() {
 
 
     return (
-        <nav className="bg-[#FFFFFF] flex flex-col h-full w-[280px] pl-[20px] pr-[10px] pt-[20px] shadow-lg gap-[10px]">
+        <nav className="bg-[#FFFFFF] flex flex-col h-full w-[280px] pl-[20px] pr-[10px] pt-[20px] shadow-lg gap-[10px] overflow-y-auto pb-[20px]">
             <div className="flex gap-[10px] items-center">
                 <div className="relative w-[32px] h-[32px]">
                     <Image src="/images/logo.svg" alt="logo" fill={true} />
@@ -46,6 +46,19 @@ export default function SideBar() {
                     <button className="text-[#667085] font-[500] text-[14px] leading-[20px]">Dismiss</button>
                     <button className="text-[#6941C6] font-[500] text-[14px] leading-[20px]">What's new?</button>
                 </div>
+            </div>
+
+            <div className="flex border-t pt-[20px] justify-around">
+                <div className="w-[40px] h-[40px] rounded-[50%] relative">
+                    <Image src="/images/avone.svg" alt="" fill={true}/>
+                </div>
+                <div className="flex flex-col">
+                    <h2 className="text-[#101828] font-[500] text-[14px] leading-[20px]">Olivia Rhye</h2>
+                    <h2 className="text-[#667085] font-[400] text-[14px] leading-[20px]">olivia@untitledui.com</h2>
+                </div>
+                <button className="relative w-[20px] h-[20px]">
+                    <Image src="/images/logout.svg" alt="" fill={true}/>
+                </button>
             </div>
 
         </nav>
