@@ -10,7 +10,7 @@ export const AppContext = createContext<AppContextType | undefined>(undefined)
 const AppProvider = ({ children }: { children: React.ReactNode }) => {
     const [isLoading, setIsLoading] = useState<boolean>(false)
     const [userInfo, setUserInfo] = useState<any>([])
-    const [activePage, setActivePage] = useState<PageDataType>(7)
+    const [activePage, setActivePage] = useState<PageDataType>(0)
     const [dashboardMenuItems, setDashboardMenuItems] = useState<DashboardMenuType[]>(dashboardMenu)
     const [isMobileMenu, setIsMobileMenu] = useState<boolean>(false)
     const sideBarRef: React.RefObject<HTMLDivElement> = useRef(null)
