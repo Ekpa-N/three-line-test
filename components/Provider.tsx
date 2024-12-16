@@ -40,15 +40,15 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
                 const newUserMenu = {
                     ...menu, subTitles: [
                         {
-                            name: "Ekpa",
+                            name: "Peter",
                             id: 1
                         },
                         {
-                            name: "Emmanuel",
+                            name: "Michael",
                             id: 2
                         },
                         {
-                            name: "Ntan",
+                            name: "Ore",
                             id: 3
                         },
                     ]
