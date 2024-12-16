@@ -33,6 +33,21 @@ export default function SideBar() {
                 })}
             </ul>
 
+            <div className="bg-[#F9FAFB] p-[10px] gap-[10px] rounded-[10px] w-full h-[292px] flex flex-col">
+                <h2 className="borde">New features available!</h2>
+                <h2>
+                    Check out the new dashboard view. Pages now load faster.
+                </h2>
+
+                <div className="relative w-full h-[136px]">
+                    <Image src="/images/new-dashboard.svg" alt="" fill={true}/>
+                </div>
+                <div className="flex gap-[20px]">
+                    <button className="text-[#667085] font-[500] text-[14px] leading-[20px]">Dismiss</button>
+                    <button className="text-[#6941C6] font-[500] text-[14px] leading-[20px]">What's new?</button>
+                </div>
+            </div>
+
         </nav>
     )
 }
